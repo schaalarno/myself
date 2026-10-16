@@ -101,10 +101,11 @@ a:focus-visible {
 
 .masthead-inner {
   width: min(100% - 64px, 1180px);
+  min-height: 100vh;
+  min-height: 100svh;
   margin-inline: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding-block: 36px 52px;
 }
 
@@ -146,10 +147,28 @@ a:focus-visible {
 
 .identity-row {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  grid-template-columns: minmax(0, 1fr) 288px;
   align-items: center;
-  gap: 56px;
-  padding-top: 56px;
+  gap: 32px;
+  flex: 1;
+}
+
+.masthead-portrait {
+  display: block;
+  width: 288px;
+  height: 288px;
+  border: 1px solid color-mix(in srgb, var(--accent), transparent 65%);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.masthead-footer {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  color: var(--soft-muted);
+  font-size: 13px;
 }
 
 .identity-title {
@@ -217,12 +236,12 @@ h1 .brace {
 }
 
 .contact-list {
-  display: grid;
-  text-align: right;
-  justify-content: end;
-  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
   max-width: none;
-  font-size: 16px;
+  margin: 0;
+  font-size: inherit;
   font-style: normal;
 }
 
@@ -246,7 +265,9 @@ h1 .brace {
 .name-last,
 .brace-open,
 .brace-close,
-.contact-list {
+.contact-list,
+.masthead-portrait,
+.masthead-location {
   animation: header-appear 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
@@ -268,6 +289,14 @@ h1 .brace {
 }
 
 .contact-list {
+  animation-delay: 460ms;
+}
+
+.masthead-portrait {
+  animation-delay: 300ms;
+}
+
+.masthead-location {
   animation-delay: 460ms;
 }
 
@@ -726,22 +755,33 @@ h1 .brace {
   }
 
   .identity-row {
-    grid-template-columns: 1fr;
-    gap: 25px;
-    padding-top: 31px;
+    grid-template-columns: minmax(0, 1fr) 112px;
+    gap: 16px 20px;
   }
 
   .identity-title {
-    --identity-name-offset: 84.6px;
+    --identity-name-offset: clamp(48px, 11.1vw, 84.6px);
+  }
+
+  .masthead-portrait {
+    width: 72px;
+    height: 72px;
+    justify-self: end;
+  }
+
+  .masthead-footer {
+    align-items: end;
+    gap: 12px;
+    font-size: 11px;
   }
 
   h1 {
     margin-bottom: 0;
+    font-size: clamp(42px, 11vw, 68px);
   }
 
   .contact-list {
-    gap: 8px;
-    font-size: 14px;
+    gap: 4px 12px;
   }
 
   .section-nav {
@@ -837,15 +877,20 @@ h1 .brace {
   }
 
   .identity-title {
-    --identity-name-offset: 67.7px;
+    --identity-name-offset: clamp(54px, 16vw, 67.7px);
+  }
+
+  .masthead-portrait {
+    width: 60px;
+    height: 60px;
+  }
+
+  h1 {
+    font-size: clamp(36px, 12vw, 48px);
   }
 
   .job-title {
-    font-size: 18px;
-  }
-
-  .contact-list {
-    justify-content: start;
+    font-size: clamp(15px, 4.2vw, 18px);
   }
 
   .section-nav-inner {
@@ -875,7 +920,9 @@ h1 .brace {
   .name-last,
   .brace-open,
   .brace-close,
-  .contact-list {
+  .contact-list,
+  .masthead-portrait,
+  .masthead-location {
     animation: none;
   }
 }
@@ -937,20 +984,38 @@ h1 .brace {
   .name-last,
   .brace-open,
   .brace-close,
-  .contact-list {
+  .contact-list,
+  .masthead-portrait,
+  .masthead-location {
     animation: none;
   }
 
   .masthead-inner {
     width: 100%;
+    min-height: 0;
     padding-block: 0;
   }
 
   .identity-row {
-    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    grid-template-columns: minmax(0, 1fr) 12mm;
     gap: 4mm;
-    padding-top: 1mm;
-    padding-bottom: 2mm;
+    flex: none;
+    padding-block: 1mm 2mm;
+  }
+
+  .masthead-portrait {
+    width: 12mm;
+    height: 12mm;
+  }
+
+  .masthead-footer {
+    align-items: center;
+    gap: 4mm;
+    font-size: 6.5pt;
+  }
+
+  .contact-list {
+    gap: 3mm;
   }
 
   h1 {
