@@ -70,16 +70,14 @@
       <main id="contenu" class="resume-layout">
         <div class="primary-column">
           <section id="profil" class="resume-section profile-section" aria-labelledby="profil-title">
-            <p class="section-index">01 <span>/</span> Présentation</p>
-            <h2 id="profil-title">Profil</h2>
+            <h2 id="profil-title" class="section-index"><span class="section-number">01</span><span class="section-separator" aria-hidden="true">/</span>Profil</h2>
             <p>Fort de 10 ans d'expérience en développement, je suis quelqu'un de curieux et à l'œil pour le détail. J'interviens sur l'ensemble du cycle : conception et implémentation de nouvelles fonctionnalités, debug et corrections, que ce soit côté backend, frontend ou sur des logiciels métiers. Je suis force de proposition: un problème trouve toujours une solution. Enfin Je m'arrange pour que toute solution trouve une implémentation simple et efficace.</p>
             <p>J'aime aussi bâtir des outils qui améliorent la qualité (CI, tests automatisés, tooling, AI skills).</p>
             <p>Je cherche un nouveau défi dans la région liégeoise.</p>
           </section>
 
           <section id="experience" class="resume-section experience-section" aria-labelledby="experience-title">
-            <p class="section-index">02 <span>/</span> Parcours</p>
-            <h2 id="experience-title">Expérience professionnelle</h2>
+            <h2 id="experience-title" class="section-index"><span class="section-number">02</span><span class="section-separator" aria-hidden="true">/</span>Expérience professionnelle</h2>
             <div class="experience-list">
               <article class="experience-entry">
                 <div class="entry-heading">
@@ -207,8 +205,7 @@
 
         <aside class="support-column" aria-label="Compétences et informations complémentaires">
           <section id="competences" class="resume-section" aria-labelledby="competences-title">
-            <p class="section-index">03 <span>/</span> Expertise</p>
-            <h2 id="competences-title">Compétences techniques</h2>
+            <h2 id="competences-title" class="section-index"><span class="section-number">03</span><span class="section-separator" aria-hidden="true">/</span>Compétences techniques</h2>
             <dl class="skill-list">
               <div class="skill-group">
                 <dt>Front-end</dt>
@@ -226,8 +223,7 @@
           </section>
 
           <section id="formation" class="resume-section" aria-labelledby="formation-title">
-            <p class="section-index">04 <span>/</span> Études</p>
-            <h2 id="formation-title">Formation</h2>
+            <h2 id="formation-title" class="section-index"><span class="section-number">04</span><span class="section-separator" aria-hidden="true">/</span>Formation</h2>
             <article class="education-entry">
               <h3>ESILV — École Supérieure d'Ingénieurs Léonard de Vinci</h3>
               <p>Diplôme d'ingénieur</p>
@@ -241,8 +237,7 @@
           </section>
 
           <section id="langues" class="resume-section" aria-labelledby="langues-title">
-            <p class="section-index">05 <span>/</span> Communication</p>
-            <h2 id="langues-title">Langues</h2>
+            <h2 id="langues-title" class="section-index"><span class="section-number">05</span><span class="section-separator" aria-hidden="true">/</span>Langues</h2>
             <dl class="language-list">
               <div><dt>Français</dt><dd>Langue maternelle</dd></div>
               <div><dt>Anglais</dt><dd>Niveau professionnel (TOEIC 845)</dd></div>
@@ -284,8 +279,6 @@
 
       const updateSectionNav = () => {
         const progress = Math.min(Math.max(window.scrollY / window.innerHeight, 0), 1);
-        sectionNav.style.setProperty("--nav-opacity", progress);
-        sectionNav.style.setProperty("--nav-text-progress", `${progress * 100}%`);
         sectionNav.style.setProperty("--identity-title-scale", 1 - progress);
         sectionNav.style.setProperty("--section-nav-logo-size", `${17 * progress}px`);
         sectionNav.style.setProperty("--section-nav-logo-gap", `${28 * progress}px`);
