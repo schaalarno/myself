@@ -39,6 +39,12 @@
 
 * {
   box-sizing: border-box;
+  transition:
+    color 200ms ease,
+    background-color 200ms ease,
+    border-color 200ms ease,
+    fill 200ms ease,
+    stroke 200ms ease;
 }
 
 html {
@@ -92,11 +98,40 @@ a:focus-visible {
   min-height: 100svh;
   display: flex;
   align-items: center;
-  background:
-    radial-gradient(ellipse at 72% 30%, var(--hero-highlight), transparent 52%),
-    radial-gradient(ellipse at 0% 100%, var(--hero-vignette), transparent 48%),
-    var(--accent-soft);
+  position: relative;
+  isolation: isolate;
+  background: var(--accent-soft);
   border-bottom: 3px double var(--line);
+}
+
+.masthead::before,
+.masthead::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  content: '';
+  transition: opacity 200ms ease;
+}
+
+.masthead::before {
+  background:
+    radial-gradient(ellipse at 72% 30%, rgb(255 255 255 / 68%), transparent 52%),
+    radial-gradient(ellipse at 0% 100%, rgb(0 127 131 / 12%), transparent 48%);
+}
+
+.masthead::after {
+  background:
+    radial-gradient(ellipse at 72% 30%, rgb(99 242 208 / 7%), transparent 52%),
+    radial-gradient(ellipse at 0% 100%, rgb(1 8 16 / 58%), transparent 48%);
+  opacity: 0;
+}
+
+:root[data-theme="dark"] .masthead::before {
+  opacity: 0;
+}
+
+:root[data-theme="dark"] .masthead::after {
+  opacity: 1;
 }
 
 .masthead-inner {
@@ -104,6 +139,8 @@ a:focus-visible {
   min-height: 100vh;
   min-height: 100svh;
   margin-inline: auto;
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   padding-block: 36px 52px;
@@ -915,6 +952,12 @@ h1 .brace {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0s !important;
+  }
+
   .job-title,
   .name-first,
   .name-last,
@@ -977,6 +1020,11 @@ h1 .brace {
   .masthead {
     min-height: 0;
     background: #ffffff;
+  }
+
+  .masthead::before,
+  .masthead::after {
+    display: none;
   }
 
   .job-title,
