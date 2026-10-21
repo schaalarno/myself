@@ -18,15 +18,15 @@
 Software Engineer
 
 a.schaal.dev@gmail.com
-Liège, Belgique
+0487076487
 
 ## PROFIL
 
-Fort de 10 ans d'expérience en développement, je suis quelqu'un de curieux et à l'œil pour le détail. J'interviens sur l'ensemble du cycle : conception et implémentation de nouvelles fonctionnalités, debug et corrections, que ce soit côté backend, frontend ou sur des logiciels métiers. Je suis force de proposition: un problème trouve toujours une solution. Enfin Je m'arrange pour que toute solution trouve une implémentation simple et efficace. 
+### Développeur polyvalent — De l'idée à la solution
 
-J'aime aussi bâtir des outils qui améliorent la qualité (CI, tests automatisés, tooling, AI skills).
+Avec une dizaine d’années d’expérience en développement, j’aime concevoir, créer et faire évoluer des solutions numériques dans leur ensemble. Du frontend au backend, en passant par l’intégration et l’automatisation, j’apprécie autant la réflexion que la mise en œuvre. Créatif et curieux, j’aime explorer de nouvelles approches, découvrir de nouvelles technologies et élargir mes compétences, notamment autour de l’intelligence artificielle. Mon objectif : transformer les idées en solutions concrètes, pertinentes et efficaces.
 
-Je cherche un nouveau défi dans la région liégeoise.
+Mobilité : région de Liège · Poste hybride ou sur site
 
 ## COMPÉTENCES TECHNIQUES
 
