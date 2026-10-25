@@ -754,6 +754,28 @@ h1 .brace {
   font-size: 13px;
 }
 
+.reference-contact {
+  display: grid;
+  gap: 4px;
+  color: var(--text-tertiary);
+  font-size: 13px;
+  font-style: normal;
+}
+
+.reference-contact strong {
+  color: var(--ink);
+}
+
+.reference-contact a {
+  width: fit-content;
+  text-decoration-color: var(--line);
+  text-underline-offset: 3px;
+}
+
+.reference-contact a:hover {
+  color: var(--accent);
+}
+
 .page-footer {
   min-height: 62px;
   color: var(--muted);
@@ -877,6 +899,10 @@ h1 .brace {
 
   #langues {
     order: 4;
+  }
+
+  #reference {
+    order: 5;
   }
 
   .resume-section + .resume-section {
