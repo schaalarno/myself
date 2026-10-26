@@ -1100,7 +1100,8 @@ h1 .brace {
   }
 
   .resume-layout {
-    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.85fr);
+    zoom: 0.9;
+    grid-template-columns: minmax(0, 1.285fr) minmax(0, 0.765fr);
     gap: 4mm;
     padding-block: 6mm 0;
   }
