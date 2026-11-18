@@ -893,16 +893,20 @@ h1 .brace {
     order: 2;
   }
 
-  #formation {
+  #atouts {
     order: 3;
   }
 
-  #langues {
+  #formation {
     order: 4;
   }
 
-  #reference {
+  #langues {
     order: 5;
+  }
+
+  #reference {
+    order: 6;
   }
 
   .resume-section + .resume-section {
@@ -1007,13 +1011,13 @@ h1 .brace {
 
   @page {
     size: A4;
-    margin: 4mm;
+    margin: 3mm;
   }
 
   body {
     background: #ffffff;
-    font-size: 8pt;
-    line-height: 1.2;
+    font-size: 8.5pt;
+    line-height: 1.16;
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
   }
@@ -1083,7 +1087,7 @@ h1 .brace {
   }
 
   h1 {
-    font-size: 26pt;
+    font-size: 27pt;
   }
 
   .identity-title {
@@ -1107,19 +1111,19 @@ h1 .brace {
   }
 
   .resume-section + .resume-section {
-    margin-top: 2mm;
+    margin-top: 1.5mm;
   }
 
   .section-index {
     margin-bottom: 1mm;
     padding-bottom: 0.5mm;
-    font-size: 11pt;
+    font-size: 11.5pt;
   }
 
   .profile-section p {
     margin-bottom: 0.7mm;
-    font-size: 8pt;
-    line-height: 1.25;
+    font-size: 8.5pt;
+    line-height: 1.2;
   }
 
   .has-scroll-reveal .scroll-reveal,
@@ -1130,12 +1134,12 @@ h1 .brace {
   }
 
   .experience-entry {
-    padding-bottom: 1.5mm;
+    padding-bottom: 1mm;
     padding-left: 0;
   }
 
   .experience-entry + .experience-entry {
-    padding-top: 1.5mm;
+    padding-top: 1mm;
   }
 
   .entry-heading {
@@ -1145,12 +1149,12 @@ h1 .brace {
 
   .entry-heading h3,
   .education-entry h3 {
-    font-size: 8.5pt;
+    font-size: 9pt;
   }
 
   .entry-role,
   .entry-details {
-    font-size: 7.5pt;
+    font-size: 8pt;
   }
 
   .entry-meta,
@@ -1160,7 +1164,7 @@ h1 .brace {
   .language-list dt,
   .language-list dd,
   .education-entry > p:not(.entry-date) {
-  font-size: 7.5pt;
+    font-size: 8pt;
   }
 
   .entry-meta {
@@ -1168,7 +1172,7 @@ h1 .brace {
   }
 
   .entry-location {
-  font-size: 6pt;
+    font-size: 6.5pt;
   }
 
   .entry-role {
@@ -1177,8 +1181,8 @@ h1 .brace {
 
   .entry-details {
     gap: 0;
-    margin-bottom: 2mm;
-    line-height: 1.15;
+    margin-bottom: 1.4mm;
+    line-height: 1.12;
   }
 
   .stack {
@@ -1193,8 +1197,8 @@ h1 .brace {
   }
 
   .chip-list li {
-    padding: 0.2mm 1mm;
-    font-size: 7pt;
+    padding: 0.2mm 0.8mm;
+    font-size: 7.5pt;
     line-height: 1.15;
   }
 
@@ -1203,22 +1207,22 @@ h1 .brace {
   }
 
   .education-entry {
-    padding-block: 1mm;
-  }
-
-  .language-list > div {
     padding-block: 0.7mm;
   }
 
+  .language-list > div {
+    padding-block: 0.5mm;
+  }
+
   .client-roles {
-    gap: 1.5mm;
-    margin-top: 1mm;
+    gap: 1mm;
+    margin-top: 0.8mm;
     padding-left: 1.5mm;
   }
 
   .client-role h4 {
     margin-bottom: 0.5mm;
-    font-size: 7.5pt;
+    font-size: 8pt;
   }
 
   a {

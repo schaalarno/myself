@@ -22,6 +22,7 @@
           <a href="#profil">Profil</a>
           <a href="#experience">Expérience</a>
           <a href="#competences">Compétences</a>
+          <a href="#atouts">Atouts</a>
           <a href="#formation">Formation</a>
           <a href="#langues">Langues</a>
           <a href="#reference">Référence</a>
@@ -64,6 +65,7 @@
           <address class="contact-list" aria-label="Coordonnées">
             <a href="mailto:arnaud.schaal9@gmail.com">arnaud.schaal9@gmail.com</a>
             <a href="tel:+32487076487">0487076487</a>
+            <a href="tel:+32487076487">www.linkedin.com/in/aschbe</a>
           </address>
         </div>
       </div>
@@ -74,7 +76,7 @@
         <section id="profil" class="resume-section profile-section" aria-label="Profil professionnel">
           <p><strong>Développeur polyvalent | Ouvert aux opportunités</strong></p>
           <p>10 ans d’expérience en développement, créatif et curieux, j’aime explorer les nouvelles technologies et concevoir des solutions innovantes.</p>
-          <p>Ouvert à de nouveaux défis en développement, ou en gestion de projet ou management.</p>
+          <p>Ouvert à de nouveaux défis en développement, ou en gestion de projet.</p>
           <p>Mobilité : région de Liège · Hybride ou sur site</p>
         </section>
         <div class="primary-column">
@@ -213,6 +215,18 @@
             </dl>
           </section>
 
+          <section id="atouts" class="resume-section" aria-labelledby="atouts-title">
+            <h2 id="atouts-title" class="section-index">Atouts</h2>
+            <ul class="chip-list" aria-label="Atouts professionnels">
+              <li>Attention aux détails</li>
+              <li>Fiabilité</li>
+              <li>Travail en équipe</li>
+              <li>Résolution de problèmes</li>
+              <li>Créativité</li>
+              <li>Adaptabilité</li>
+            </ul>
+          </section>
+
           <section id="formation" class="resume-section" aria-labelledby="formation-title">
             <h2 id="formation-title" class="section-index">Formation</h2>
             <article class="education-entry">
@@ -304,7 +318,7 @@
           });
         }, { threshold: 0.08, rootMargin: "0px 0px -6% 0px" });
 
-        document.querySelectorAll("#profil, .experience-entry, #competences, #formation, #langues").forEach(element => {
+        document.querySelectorAll("#profil, .experience-entry, #competences, #atouts, #formation, #langues, #reference").forEach(element => {
           element.classList.add("scroll-reveal");
           revealObserver.observe(element);
         });
