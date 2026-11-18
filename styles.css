@@ -262,6 +262,13 @@ h1 .brace {
   font-style: normal;
 }
 
+.contact-details {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  gap: inherit;
+}
+
 .contact-list a {
   text-decoration: none;
   text-underline-offset: 4px;
