@@ -4,30 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#eef4f7">
-    <meta name="description" content="Le parcours professionnel d'Arnaud Schaal, ingénieur logiciel à Liège.">
-    <title>Arnaud Schaal — Software Engineer</title>
+    <meta name="description" content="Le parcours professionnel d'Arnaud Schaal, ingénieur logiciel à Liège." data-i18n-meta="description">
+    <title data-i18n="pageTitle">Arnaud Schaal — Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <a class="skip-link" href="#contenu">Aller au contenu</a>
-    <nav class="section-nav" aria-label="Navigation du CV">
+    <a class="skip-link" href="#contenu" data-i18n="skipLink">Aller au contenu</a>
+    <nav class="section-nav" aria-label="Navigation du CV" data-i18n-aria="navLabel">
       <div class="section-nav-inner">
         <a class="section-nav-logo" href="#top" aria-label="Arnaud Schaal">
           <span aria-hidden="true"><span>{</span>a<span>s</span><span>}</span></span>
         </a>
         <div class="section-nav-links">
-          <a href="#profil">Profil</a>
-          <a href="#experience">Expérience</a>
-          <a href="#competences">Compétences</a>
-          <a href="#atouts">Atouts</a>
-          <a href="#formation">Formation</a>
-          <a href="#langues">Langues</a>
-          <a href="#reference">Référence</a>
+          <a href="#profil" data-i18n="navProfile">Profil</a>
+          <a href="#experience" data-i18n="navExperience">Expérience</a>
+          <a href="#competences" data-i18n="navSkills">Compétences</a>
+          <a href="#atouts" data-i18n="navStrengths">Atouts</a>
+          <a href="#formation" data-i18n="navEducation">Formation</a>
+          <a href="#langues" data-i18n="navLanguages">Langues</a>
+          <a href="#reference" data-i18n="navReference">Référence</a>
         </div>
         <div class="section-nav-actions">
+          <button class="language-toggle" type="button" aria-label="Passer en anglais">
+            <span class="language-toggle-fr" aria-hidden="true">FR</span>
+            <span class="language-toggle-en" aria-hidden="true">EN</span>
+          </button>
           <button class="theme-toggle" type="button" aria-pressed="false">
             <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z"></path>
@@ -53,13 +57,13 @@
             </h1>
             <p class="job-title">Software Engineer</p>
           </div>
-          <img class="masthead-portrait" src="assets/image.png" alt="Portrait d'Arnaud Schaal" width="1145" height="1374">
+          <img class="masthead-portrait" src="assets/image.png" alt="Portrait d'Arnaud Schaal" data-i18n-alt="portraitAlt" width="1145" height="1374">
         </div>
         <div class="masthead-footer">
-          <address class="contact-list" aria-label="Coordonnées">
+          <address class="contact-list" aria-label="Coordonnées" data-i18n-aria="contactLabel">
             <div class="contact-details">
               <a href="https://www.linkedin.com/in/aschbe">www.linkedin.com/in/aschbe</a>
-              <a href="https://schaalarno.github.io/myself">schaalarno.github.io/myself</a> 
+              <a href="https://schaalarno.github.io/myself">schaalarno.github.io/myself</a>
             </div>
           </address>
         </div>
@@ -68,32 +72,32 @@
 
     <div class="page-shell" id="top">
       <main id="contenu" class="resume-layout">
-        <section id="profil" class="resume-section profile-section" aria-label="Profil professionnel">
-          <p><strong>Développeur polyvalent | Ouvert aux opportunités</strong></p>
-          <p>10 ans d’expérience en développement, créatif et curieux, j’aime explorer les nouvelles technologies et concevoir des solutions innovantes.</p>
-          <p>Ouvert à de nouveaux défis en développement, ou en gestion de projet.</p>
-          <p>Mobilité : région de Liège · Hybride ou sur site</p>
+        <section id="profil" class="resume-section profile-section" aria-label="Profil professionnel" data-i18n-aria="profileLabel">
+          <p><strong data-i18n="profileHeadline">Développeur polyvalent | Ouvert aux opportunités</strong></p>
+          <p data-i18n="profile1">10 ans d’expérience en développement, créatif et curieux, j’aime explorer les nouvelles technologies et concevoir des solutions innovantes.</p>
+          <p data-i18n="profile2">Ouvert à de nouveaux défis en développement, ou en gestion de projet.</p>
+          <p data-i18n="mobility">Mobilité : région de Liège · Hybride ou sur site</p>
         </section>
         <div class="primary-column">
           <section id="experience" class="resume-section experience-section" aria-labelledby="experience-title">
-            <h2 id="experience-title" class="section-index">Expérience professionnelle</h2>
+            <h2 id="experience-title" class="section-index" data-i18n="experienceTitle">Expérience professionnelle</h2>
             <div class="experience-list">
               <article class="experience-entry">
                 <div class="entry-heading">
                   <h3>EVS Broadcast Equipment</h3>
                   <p class="entry-role">Software Engineer</p>
-                  <p class="entry-meta"><span class="entry-location">Liège</span><span class="entry-meta-separator" aria-hidden="true">·</span><span class="entry-date"><time datetime="2019-06">Juin 2019</time> – <time datetime="2026-09">Septembre 2026</time></span></p>
+                  <p class="entry-meta"><span class="entry-location">Liège</span><span class="entry-meta-separator" aria-hidden="true">·</span><span class="entry-date"><time datetime="2019-06" data-i18n="jun2019">Juin 2019</time> – <time datetime="2026-09" data-i18n="sep2026">Septembre 2026</time></span></p>
                 </div>
                 <ul class="entry-details">
-                  <li>Maintenance d'une application React de gestion de contenu multimédia.</li>
-                  <li>Maintenance des services de recherche, de gestion des métadonnées, des utilisateurs et des licences, ainsi que des applications tierces (Adobe, RabbitMQ) et des workflows internes en .NET et Spring.</li>
-                  <li>Migration du framework de test de Cypress vers Playwright.</li>
-                  <li>Implémentation de l'internationalisation de la SPA.</li>
-                  <li>Maintenance du SDK front-end <i>(React, Vite, pnpm, Tailwind…)</i></li>
-                  <li>Documentation de l'ensemble des développements sur le wiki.</li>
+                  <li data-i18n="evs1">Maintenance d'une application React de gestion de contenu multimédia.</li>
+                  <li data-i18n="evs2">Maintenance des services de recherche, de gestion des métadonnées, des utilisateurs et des licences, ainsi que des applications tierces (Adobe, RabbitMQ) et des workflows internes en .NET et Spring.</li>
+                  <li data-i18n="evs3">Migration du framework de test de Cypress vers Playwright.</li>
+                  <li data-i18n="evs4">Implémentation de l'internationalisation de la SPA.</li>
+                  <li data-i18n="evs5">Maintenance du SDK front-end <i>(React, Vite, pnpm, Tailwind…)</i></li>
+                  <li data-i18n="evs6">Documentation de l'ensemble des développements sur le wiki.</li>
                 </ul>
                 <div class="stack">
-                  <strong>Stack :</strong>
+                  <strong data-i18n="stack">Stack :</strong>
                   <ul class="chip-list" aria-label="Technologies utilisées">
                     <li data-category="languages">JavaScript</li><li data-category="languages">TypeScript</li><li data-category="languages">Java</li><li data-category="languages">Python</li><li data-category="languages">CSS</li><li data-category="languages">C#</li><li data-category="languages">HTML</li><li data-category="frontend">React.js</li><li data-category="frontend">Redux Toolkit</li><li data-category="frontend">TanStack</li><li data-category="frontend">Playwright</li><li data-category="backend">Node.js</li><li data-category="backend">.NET Framework</li><li data-category="backend">Kafka</li><li data-category="backend">PostGres</li><li data-category="devops">Git</li><li data-category="devops">TeamCity</li><li data-category="devops">Jira</li><li data-category="devops">BitBucket</li><li data-category="devops">Docker</li><li data-category="devops">Kubernetes</li><li data-category="devops">OpenCode</li><li data-category="devops">GitHub Copilot</li>
                   </ul>
@@ -104,34 +108,34 @@
                 <div class="entry-heading">
                   <h3>Abylsen</h3>
                   <p class="entry-role">Junior IT Consultant</p>
-                  <p class="entry-meta"><span class="entry-location">Liège / Bruxelles</span><span class="entry-meta-separator" aria-hidden="true">·</span><span class="entry-date"><time datetime="2017-10">Octobre 2017</time> – <time datetime="2019-06">Juin 2019</time></span></p>
+                  <p class="entry-meta"><span class="entry-location">Liège / Bruxelles</span><span class="entry-meta-separator" aria-hidden="true">·</span><span class="entry-date"><time datetime="2017-10" data-i18n="oct2017">Octobre 2017</time> – <time datetime="2019-06" data-i18n="jun2019">Juin 2019</time></span></p>
                 </div>
 
                 <div class="client-roles">
                   <section class="client-role" aria-labelledby="police-title">
-                    <h4 id="police-title">Police Fédérale</h4>
-                    <p class="entry-role">Développeur logiciel</p>
-                    <p class="entry-meta"><span class="entry-location">Bruxelles</span><span class="entry-meta-separator" aria-hidden="true">·</span><span class="entry-date"><time datetime="2018-08">Août 2018</time> – <time datetime="2019-06">Juin 2019</time></span></p>
+                    <h4 id="police-title" data-i18n="federalPolice">Police Fédérale</h4>
+                    <p class="entry-role" data-i18n="softwareDeveloper">Développeur logiciel</p>
+                    <p class="entry-meta"><span class="entry-location">Bruxelles</span><span class="entry-meta-separator" aria-hidden="true">·</span><span class="entry-date"><time datetime="2018-08" data-i18n="aug2018">Août 2018</time> – <time datetime="2019-06" data-i18n="jun2019">Juin 2019</time></span></p>
                     <ul class="entry-details">
-                      <li>Développement de fonctionnalités et maintenance du logiciel de gestion des procès-verbaux (WinForm/C++).</li>
-                      <li>Création d'une bibliothèque MVC.</li>
+                      <li data-i18n="police1">Développement de fonctionnalités et maintenance du logiciel de gestion des procès-verbaux (WinForm/C++).</li>
+                      <li data-i18n="police2">Création d'une bibliothèque MVC.</li>
                     </ul>
                     <div class="stack">
-                      <strong>Stack :</strong>
+                      <strong data-i18n="stack">Stack :</strong>
                       <ul class="chip-list" aria-label="Technologies utilisées"><li data-category="languages">C++</li><li data-category="languages">SQL</li><li data-category="devops">SVN</li></ul>
                     </div>
                   </section>
                   <section class="client-role" aria-labelledby="gaming-title">
                     <h4 id="gaming-title">Gaming1</h4>
-                    <p class="entry-role">Développeur back-end</p>
-                    <p class="entry-meta"><span class="entry-location">Liège</span><span class="entry-meta-separator" aria-hidden="true">·</span><span class="entry-date"><time datetime="2017-10">Octobre 2017</time> – <time datetime="2018-06">Juin 2018</time></span></p>
+                    <p class="entry-role" data-i18n="backendDeveloper">Développeur back-end</p>
+                    <p class="entry-meta"><span class="entry-location">Liège</span><span class="entry-meta-separator" aria-hidden="true">·</span><span class="entry-date"><time datetime="2017-10" data-i18n="oct2017">Octobre 2017</time> – <time datetime="2018-06" data-i18n="jun2018">Juin 2018</time></span></p>
                     <ul class="entry-details">
-                      <li>Développement de fonctionnalités et maintenance du back-end destiné à la clientèle.</li>
-                      <li>Ajout de nouveaux moyens de paiement en ligne.</li>
-                      <li>Création d'un nouveau site web en ASP.NET destiné au marché français.</li>
+                      <li data-i18n="gaming1">Développement de fonctionnalités et maintenance du back-end destiné à la clientèle.</li>
+                      <li data-i18n="gaming2">Ajout de nouveaux moyens de paiement en ligne.</li>
+                      <li data-i18n="gaming3">Création d'un nouveau site web en ASP.NET destiné au marché français.</li>
                     </ul>
                     <div class="stack">
-                      <strong>Stack :</strong>
+                      <strong data-i18n="stack">Stack :</strong>
                       <ul class="chip-list" aria-label="Technologies utilisées"><li data-category="languages">SQL</li><li data-category="languages">C#</li><li data-category="backend">ASP.NET</li><li data-category="backend">PostGres</li><li data-category="devops">Git</li><li data-category="devops">Jira</li></ul>
                     </div>
                   </section>
@@ -141,14 +145,14 @@
               <article class="experience-entry">
                 <div class="entry-heading">
                   <h3>Sopra Steria</h3>
-                  <p class="entry-role">Ingénieur Informatique</p>
-                  <p class="entry-meta"><span class="entry-location">Meudon</span><span class="entry-meta-separator" aria-hidden="true">·</span><span class="entry-date"><time datetime="2016-07">Juillet 2016</time> – <time datetime="2017-09">Septembre 2017</time></span></p>
+                  <p class="entry-role" data-i18n="softwareEngineer">Ingénieur Informatique</p>
+                  <p class="entry-meta"><span class="entry-location">Meudon</span><span class="entry-meta-separator" aria-hidden="true">·</span><span class="entry-date"><time datetime="2016-07" data-i18n="jul2016">Juillet 2016</time> – <time datetime="2017-09" data-i18n="sep2017">Septembre 2017</time></span></p>
                 </div>
                 <ul class="entry-details">
-                  <li>Développement de fonctionnalités et maintenance des logiciels dédiés à la prise de paris hippiques (WPF).</li>
+                  <li data-i18n="sopra1">Développement de fonctionnalités et maintenance des logiciels dédiés à la prise de paris hippiques (WPF).</li>
                 </ul>
                 <div class="stack">
-                  <strong>Stack :</strong>
+                  <strong data-i18n="stack">Stack :</strong>
                   <ul class="chip-list" aria-label="Technologies utilisées"><li data-category="languages">C#</li><li data-category="languages">XAML</li><li data-category="frontend">WPF</li><li data-category="devops">SVN</li></ul>
                 </div>
               </article>
@@ -156,15 +160,15 @@
               <article class="experience-entry">
                 <div class="entry-heading">
                   <h3>Luzzus</h3>
-                  <p class="entry-role">Stage — Développeur Applications Mobiles</p>
-                  <p class="entry-meta"><span class="entry-location">Paris</span><span class="entry-meta-separator" aria-hidden="true">·</span><span class="entry-date"><time datetime="2013-08">Août 2013</time> – <time datetime="2014-01">Janvier 2014</time></span></p>
+                  <p class="entry-role" data-i18n="mobileIntern">Stage — Développeur Applications Mobiles</p>
+                  <p class="entry-meta"><span class="entry-location">Paris</span><span class="entry-meta-separator" aria-hidden="true">·</span><span class="entry-date"><time datetime="2013-08" data-i18n="aug2013">Août 2013</time> – <time datetime="2014-01" data-i18n="jan2014">Janvier 2014</time></span></p>
                 </div>
                 <ul class="entry-details">
-                  <li>Développement d'une application mobile pour iOS et Android : TagYourCar.</li>
-                  <li>Création du back-end serverless sur Azure.</li>
+                  <li data-i18n="luzzus1">Développement d'une application mobile pour iOS et Android : TagYourCar.</li>
+                  <li data-i18n="luzzus2">Création du back-end serverless sur Azure.</li>
                 </ul>
                 <div class="stack">
-                  <strong>Stack :</strong>
+                  <strong data-i18n="stack">Stack :</strong>
                   <ul class="chip-list" aria-label="Technologies utilisées"><li data-category="languages">C#</li><li data-category="languages">JavaScript</li><li data-category="frontend">Xamarin</li><li data-category="backend">Azure</li><li data-category="devops">Git</li></ul>
                 </div>
               </article>
@@ -172,14 +176,14 @@
               <article class="experience-entry">
                 <div class="entry-heading">
                   <h3>Buuyers</h3>
-                  <p class="entry-role">Stage — Développeur Web</p>
-                  <p class="entry-meta"><span class="entry-location">Courbevoie</span><span class="entry-meta-separator" aria-hidden="true">·</span><span class="entry-date"><time datetime="2013-05">Mai 2013</time> – <time datetime="2013-06">Juin 2013</time></span></p>
+                  <p class="entry-role" data-i18n="webIntern">Stage — Développeur Web</p>
+                  <p class="entry-meta"><span class="entry-location">Courbevoie</span><span class="entry-meta-separator" aria-hidden="true">·</span><span class="entry-date"><time datetime="2013-05" data-i18n="may2013">Mai 2013</time> – <time datetime="2013-06" data-i18n="jun2013">Juin 2013</time></span></p>
                 </div>
                 <ul class="entry-details">
-                  <li>Développement d'un site vitrine pour le lancement de Buuyers, une plateforme de mise en relation entre particuliers et professionnels.</li>
+                  <li data-i18n="buuyers1">Développement d'un site vitrine pour le lancement de Buuyers, une plateforme de mise en relation entre particuliers et professionnels.</li>
                 </ul>
                 <div class="stack">
-                  <strong>Stack :</strong>
+                  <strong data-i18n="stack">Stack :</strong>
                   <ul class="chip-list" aria-label="Technologies utilisées"><li data-category="languages">CSS</li><li data-category="languages">HTML</li><li data-category="backend">PHP</li><li data-category="backend">Joomla</li></ul>
                 </div>
               </article>
@@ -187,69 +191,69 @@
           </section>
         </div>
 
-        <aside class="support-column" aria-label="Compétences et informations complémentaires">
+        <aside class="support-column" aria-label="Compétences et informations complémentaires" data-i18n-aria="supportLabel">
           <section id="competences" class="resume-section" aria-labelledby="competences-title">
-            <h2 id="competences-title" class="section-index">Compétences techniques</h2>
+            <h2 id="competences-title" class="section-index" data-i18n="skillsTitle">Compétences techniques</h2>
             <dl class="skill-list">
               <div class="skill-group">
-                <dt>Langages</dt>
-                <dd><ul class="chip-list" aria-label="Compétences en langages"><li data-category="languages">CSS</li><li data-category="languages">HTML</li><li data-category="languages">JavaScript</li><li data-category="languages">TypeScript</li><li data-category="languages">XAML</li><li data-category="languages">C#</li><li data-category="languages">C++</li><li data-category="languages">SQL</li><li data-category="languages">Java</li><li data-category="languages">Python</li></ul></dd>
+                <dt data-i18n="languagesSkill">Langages</dt>
+                <dd><ul class="chip-list" aria-label="Compétences en langages" data-i18n-aria="languageSkillsLabel"><li data-category="languages">CSS</li><li data-category="languages">HTML</li><li data-category="languages">JavaScript</li><li data-category="languages">TypeScript</li><li data-category="languages">XAML</li><li data-category="languages">C#</li><li data-category="languages">C++</li><li data-category="languages">SQL</li><li data-category="languages">Java</li><li data-category="languages">Python</li></ul></dd>
               </div>
               <div class="skill-group">
                 <dt>Front-end</dt>
-                <dd><ul class="chip-list" aria-label="Compétences front-end"><li data-category="frontend">React.js</li><li data-category="frontend">Redux Toolkit</li><li data-category="frontend">TanStack</li><li data-category="frontend">Playwright</li><li data-category="frontend">WPF</li><li data-category="frontend">Xamarin</li></ul></dd>
+                <dd><ul class="chip-list" aria-label="Compétences front-end" data-i18n-aria="frontendSkillsLabel"><li data-category="frontend">React.js</li><li data-category="frontend">Redux Toolkit</li><li data-category="frontend">TanStack</li><li data-category="frontend">Playwright</li><li data-category="frontend">WPF</li><li data-category="frontend">Xamarin</li></ul></dd>
               </div>
               <div class="skill-group">
                 <dt>Back-end</dt>
-                <dd><ul class="chip-list" aria-label="Compétences back-end"><li data-category="backend">.NET Framework</li><li data-category="backend">Spring</li><li data-category="backend">Node.js</li><li data-category="backend">.NET</li><li data-category="backend">Kafka</li><li data-category="backend">ASP.NET</li><li data-category="backend">Azure</li><li data-category="backend">PostGres</li></ul></dd>
+                <dd><ul class="chip-list" aria-label="Compétences back-end" data-i18n-aria="backendSkillsLabel"><li data-category="backend">.NET Framework</li><li data-category="backend">Spring</li><li data-category="backend">Node.js</li><li data-category="backend">.NET</li><li data-category="backend">Kafka</li><li data-category="backend">ASP.NET</li><li data-category="backend">Azure</li><li data-category="backend">PostGres</li></ul></dd>
               </div>
               <div class="skill-group">
-                <dt>DevOps &amp; Outils</dt>
-                <dd><ul class="chip-list" aria-label="Outils DevOps"><li data-category="devops">Git</li><li data-category="devops">TeamCity</li><li data-category="devops">Jira</li><li data-category="devops">BitBucket</li><li data-category="devops">Docker</li><li data-category="devops">Kubernetes</li><li data-category="devops">SVN</li><li data-category="devops">OpenCode</li><li data-category="devops">GitHub Copilot</li></ul></dd>
+                <dt data-i18n="devopsTools">DevOps &amp; Outils</dt>
+                <dd><ul class="chip-list" aria-label="Outils DevOps" data-i18n-aria="devopsLabel"><li data-category="devops">Git</li><li data-category="devops">TeamCity</li><li data-category="devops">Jira</li><li data-category="devops">BitBucket</li><li data-category="devops">Docker</li><li data-category="devops">Kubernetes</li><li data-category="devops">SVN</li><li data-category="devops">OpenCode</li><li data-category="devops">GitHub Copilot</li></ul></dd>
               </div>
             </dl>
           </section>
 
           <section id="atouts" class="resume-section" aria-labelledby="atouts-title">
-            <h2 id="atouts-title" class="section-index">Atouts</h2>
-            <ul class="chip-list" aria-label="Atouts professionnels">
-              <li>Attention aux détails</li>
-              <li>Fiabilité</li>
-              <li>Travail en équipe</li>
-              <li>Résolution de problèmes</li>
-              <li>Créativité</li>
-              <li>Adaptabilité</li>
+            <h2 id="atouts-title" class="section-index" data-i18n="strengthsTitle">Atouts</h2>
+            <ul class="chip-list" aria-label="Atouts professionnels" data-i18n-aria="strengthsLabel">
+              <li data-i18n="strength1">Attention aux détails</li>
+              <li data-i18n="strength2">Fiabilité</li>
+              <li data-i18n="strength3">Travail en équipe</li>
+              <li data-i18n="strength4">Résolution de problèmes</li>
+              <li data-i18n="strength5">Créativité</li>
+              <li data-i18n="strength6">Adaptabilité</li>
             </ul>
           </section>
 
           <section id="formation" class="resume-section" aria-labelledby="formation-title">
-            <h2 id="formation-title" class="section-index">Formation</h2>
+            <h2 id="formation-title" class="section-index" data-i18n="educationTitle">Formation</h2>
             <article class="education-entry">
-              <h3>ESILV — École Supérieure d'Ingénieurs Léonard de Vinci</h3>
-              <p>Diplôme d'ingénieur</p>
+              <h3 data-i18n="esilvName">ESILV — École Supérieure d'Ingénieurs Léonard de Vinci</h3>
+              <p data-i18n="engineerDegree">Diplôme d'ingénieur</p>
               <p class="entry-date"><time datetime="2011">2011</time> – <time datetime="2016">2016</time></p>
             </article>
             <article class="education-entry">
               <h3>Université du Québec à Chicoutimi</h3>
-              <p>Master en informatique — Ingénierie informatique</p>
+              <p data-i18n="masterDegree">Master en informatique — Ingénierie informatique</p>
               <p class="entry-date"><time datetime="2015">2015</time> – <time datetime="2016">2016</time></p>
             </article>
           </section>
 
           <section id="langues" class="resume-section" aria-labelledby="langues-title">
-            <h2 id="langues-title" class="section-index">Langues</h2>
+            <h2 id="langues-title" class="section-index" data-i18n="languagesTitle">Langues</h2>
             <dl class="language-list">
-              <div><dt>Français</dt><dd>Langue maternelle</dd></div>
-              <div><dt>Anglais</dt><dd>Niveau professionnel (TOEIC 845)</dd></div>
-              <div><dt>Italien</dt><dd>Niveau élémentaire</dd></div>
+              <div><dt data-i18n="french">Français</dt><dd data-i18n="native">Langue maternelle</dd></div>
+              <div><dt data-i18n="english">Anglais</dt><dd data-i18n="professional">Niveau professionnel (TOEIC 845)</dd></div>
+              <div><dt data-i18n="italian">Italien</dt><dd data-i18n="elementary">Niveau élémentaire</dd></div>
             </dl>
           </section>
 
           <section id="reference" class="resume-section" aria-labelledby="reference-title">
-            <h2 id="reference-title" class="section-index">Référence</h2>
+            <h2 id="reference-title" class="section-index" data-i18n="referenceTitle">Référence</h2>
             <address class="reference-contact">
               <strong>Jean-Luc Sonnet</strong>
-              <span>Engineering Manager @EVS Broadcast Equipment</span>
+              <span data-i18n="engineeringManager">Engineering Manager @EVS Broadcast Equipment</span>
               <a href="https://www.linkedin.com/in/jean-luc-sonnet-1a35a81/">www.linkedin.com/in/jean-luc-sonnet-1a35a81</a>
             </address>
           </section>
@@ -261,8 +265,114 @@
     </div>
     <script>
       const root = document.documentElement;
+      const languageToggle = document.querySelector(".language-toggle");
       const themeToggle = document.querySelector(".theme-toggle");
       const themeColor = document.querySelector('meta[name="theme-color"]');
+      const translations = {
+        fr: {
+          skipLink: "Aller au contenu", navLabel: "Navigation du CV", navProfile: "Profil", navExperience: "Expérience",
+          navSkills: "Compétences", navStrengths: "Atouts", navEducation: "Formation", navLanguages: "Langues", navReference: "Référence",
+          contactLabel: "Coordonnées", profileLabel: "Profil professionnel", profileHeadline: "Développeur polyvalent | Ouvert aux opportunités",
+          profile1: "10 ans d’expérience en développement, créatif et curieux, j’aime explorer les nouvelles technologies et concevoir des solutions innovantes.",
+          profile2: "Ouvert à de nouveaux défis en développement, ou en gestion de projet.", mobility: "Mobilité : région de Liège · Hybride ou sur site",
+          experienceTitle: "Expérience professionnelle", jun2019: "Juin 2019", sep2026: "Septembre 2026", oct2017: "Octobre 2017",
+          aug2018: "Août 2018", jun2018: "Juin 2018", jul2016: "Juillet 2016", sep2017: "Septembre 2017", aug2013: "Août 2013",
+          jan2014: "Janvier 2014", may2013: "Mai 2013", jun2013: "Juin 2013",
+          evs1: "Maintenance d'une application React de gestion de contenu multimédia.",
+          evs2: "Maintenance des services de recherche, de gestion des métadonnées, des utilisateurs et des licences, ainsi que des applications tierces (Adobe, RabbitMQ) et des workflows internes en .NET et Spring.",
+          evs3: "Migration du framework de test de Cypress vers Playwright.", evs4: "Implémentation de l'internationalisation de la SPA.",
+          evs5: "Maintenance du SDK front-end (React, Vite, pnpm, Tailwind…)", evs6: "Documentation de l'ensemble des développements sur le wiki.",
+          stack: "Stack :", softwareDeveloper: "Développeur logiciel", backendDeveloper: "Développeur back-end",
+          police1: "Développement de fonctionnalités et maintenance du logiciel de gestion des procès-verbaux (WinForm/C++).",
+          police2: "Création d'une bibliothèque MVC.",
+          gaming1: "Développement de fonctionnalités et maintenance du back-end destiné à la clientèle.",
+          gaming2: "Ajout de nouveaux moyens de paiement en ligne.", gaming3: "Création d'un nouveau site web en ASP.NET destiné au marché français.",
+          softwareEngineer: "Ingénieur Informatique", sopra1: "Développement de fonctionnalités et maintenance des logiciels dédiés à la prise de paris hippiques (WPF).",
+          mobileIntern: "Stage — Développeur Applications Mobiles", luzzus1: "Développement d'une application mobile pour iOS et Android : TagYourCar.",
+          luzzus2: "Création du back-end serverless sur Azure.", webIntern: "Stage — Développeur Web",
+          buuyers1: "Développement d'un site vitrine pour le lancement de Buuyers, une plateforme de mise en relation entre particuliers et professionnels.",
+          supportLabel: "Compétences et informations complémentaires", skillsTitle: "Compétences techniques", languagesSkill: "Langages",
+          languageSkillsLabel: "Compétences en langages", frontendSkillsLabel: "Compétences front-end", backendSkillsLabel: "Compétences back-end",
+          devopsTools: "DevOps & Outils", devopsLabel: "Outils DevOps", strengthsTitle: "Atouts", strengthsLabel: "Atouts professionnels",
+          strength1: "Attention aux détails", strength2: "Fiabilité", strength3: "Travail en équipe", strength4: "Résolution de problèmes",
+          strength5: "Créativité", strength6: "Adaptabilité", educationTitle: "Formation", esilvName: "ESILV — École Supérieure d'Ingénieurs Léonard de Vinci",
+          engineerDegree: "Diplôme d'ingénieur", masterDegree: "Master en informatique — Ingénierie informatique",
+          languagesTitle: "Langues", french: "Français", native: "Langue maternelle", english: "Anglais",
+          professional: "Niveau professionnel (TOEIC 845)", italian: "Italien", elementary: "Niveau élémentaire",
+          referenceTitle: "Référence", pageTitle: "Arnaud Schaal — Software Engineer",
+          description: "Le parcours professionnel d'Arnaud Schaal, ingénieur logiciel à Liège.",
+          federalPolice: "Police Fédérale", engineeringManager: "Engineering Manager @EVS Broadcast Equipment", portraitAlt: "Portrait d'Arnaud Schaal",
+          permit: "Permis B",
+          switchLanguage: "Passer en anglais", switchThemeDark: "Passer au thème sombre", switchThemeLight: "Passer au thème clair"
+        },
+        en: {
+          skipLink: "Skip to content", navLabel: "CV navigation", navProfile: "Profile", navExperience: "Experience",
+          navSkills: "Skills", navStrengths: "Strengths", navEducation: "Education", navLanguages: "Languages", navReference: "Reference",
+          contactLabel: "Contact details", profileLabel: "Professional profile", profileHeadline: "Versatile developer | Open to opportunities",
+          profile1: "10 years of development experience. Creative and curious, I enjoy exploring new technologies and designing innovative solutions.",
+          profile2: "Open to new challenges in development or project management.", mobility: "Mobility: Liège area · Hybrid or on-site",
+          experienceTitle: "Professional experience", jun2019: "June 2019", sep2026: "September 2026", oct2017: "October 2017",
+          aug2018: "August 2018", jun2018: "June 2018", jul2016: "July 2016", sep2017: "September 2017", aug2013: "August 2013",
+          jan2014: "January 2014", may2013: "May 2013", jun2013: "June 2013",
+          evs1: "Maintained a React application for multimedia content management.",
+          evs2: "Maintained search, metadata, user and licensing services, as well as third-party applications (Adobe, RabbitMQ) and internal .NET and Spring workflows.",
+          evs3: "Migrated the test framework from Cypress to Playwright.", evs4: "Implemented internationalization in the SPA.",
+          evs5: "Maintained the front-end SDK (React, Vite, pnpm, Tailwind…)", evs6: "Documented all development work in the wiki.",
+          stack: "Stack:", softwareDeveloper: "Software developer", backendDeveloper: "Back-end developer",
+          police1: "Developed features and maintained court-report management software (WinForm/C++).", police2: "Created an MVC library.",
+          gaming1: "Developed features and maintained the customer-facing back end.", gaming2: "Added new online payment methods.",
+          gaming3: "Created a new ASP.NET website for the French market.", softwareEngineer: "Software Engineer",
+          sopra1: "Developed features and maintained software for horse-racing betting (WPF).",
+          mobileIntern: "Internship — Mobile Application Developer", luzzus1: "Developed a mobile application for iOS and Android: TagYourCar.",
+          luzzus2: "Created the serverless back end on Azure.", webIntern: "Internship — Web Developer",
+          buuyers1: "Developed a showcase website for the launch of Buuyers, a platform connecting individuals and professionals.",
+          supportLabel: "Skills and additional information", skillsTitle: "Technical skills", languagesSkill: "Languages",
+          languageSkillsLabel: "Language skills", frontendSkillsLabel: "Front-end skills", backendSkillsLabel: "Back-end skills",
+          devopsTools: "DevOps & Tools", devopsLabel: "DevOps tools", strengthsTitle: "Strengths", strengthsLabel: "Professional strengths",
+          strength1: "Attention to detail", strength2: "Reliability", strength3: "Teamwork", strength4: "Problem solving",
+          strength5: "Creativity", strength6: "Adaptability", educationTitle: "Education", esilvName: "ESILV — Leonard de Vinci School of Engineering",
+          engineerDegree: "Engineering degree", masterDegree: "Master's degree in computer science — Computer engineering",
+          languagesTitle: "Languages", french: "French", native: "Native", english: "English",
+          professional: "Professional proficiency (TOEIC 845)", italian: "Italian", elementary: "Elementary proficiency",
+          referenceTitle: "Reference", pageTitle: "Arnaud Schaal — Software Engineer",
+          description: "Professional background of Arnaud Schaal, software engineer in Liège.",
+          federalPolice: "Federal Police", engineeringManager: "Engineering Manager @EVS Broadcast Equipment", portraitAlt: "Portrait of Arnaud Schaal",
+          permit: "Driving licence B",
+          switchLanguage: "Switch to French", switchThemeDark: "Switch to dark theme", switchThemeLight: "Switch to light theme"
+        }
+      };
+
+      const storedLanguage = localStorage.getItem("moi-language");
+      const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
+      let currentLanguage = requestedLanguage === "en" || requestedLanguage === "fr"
+        ? requestedLanguage
+        : storedLanguage === "en" || storedLanguage === "fr" ? storedLanguage : "fr";
+
+      const setLanguage = (language, persist = false) => {
+        currentLanguage = language;
+        root.lang = language;
+        document.querySelectorAll("[data-i18n]").forEach(element => {
+          const key = element.dataset.i18n;
+          if (translations[language][key]) element.textContent = translations[language][key];
+        });
+        document.querySelectorAll("[data-i18n-aria]").forEach(element => {
+          const key = element.dataset.i18nAria;
+          if (translations[language][key]) element.setAttribute("aria-label", translations[language][key]);
+        });
+        document.querySelectorAll("[data-i18n-alt]").forEach(element => {
+          const key = element.dataset.i18nAlt;
+          if (translations[language][key]) element.setAttribute("alt", translations[language][key]);
+        });
+        const description = document.querySelector('meta[name="description"]');
+        description.content = translations[language].description;
+        languageToggle.setAttribute("aria-label", translations[language].switchLanguage);
+        if (persist) localStorage.setItem("moi-language", language);
+        if (root.dataset.theme) setTheme(root.dataset.theme);
+      };
+
+      languageToggle.addEventListener("click", () => {
+        setLanguage(currentLanguage === "fr" ? "en" : "fr", true);
+      });
       const storedTheme = localStorage.getItem("moi-theme");
       const initialTheme = storedTheme === "dark" || storedTheme === "light"
         ? storedTheme
@@ -271,7 +381,9 @@
       const setTheme = (theme, persist = false) => {
         root.dataset.theme = theme;
         themeToggle.setAttribute("aria-pressed", String(theme === "dark"));
-        themeToggle.setAttribute("aria-label", theme === "dark" ? "Passer au thème clair" : "Passer au thème sombre");
+        themeToggle.setAttribute("aria-label", theme === "dark"
+          ? translations[currentLanguage].switchThemeLight
+          : translations[currentLanguage].switchThemeDark);
         themeColor.content = theme === "dark" ? "#08111b" : "#eef4f7";
         if (persist) localStorage.setItem("moi-theme", theme);
       };
@@ -280,6 +392,7 @@
         setTheme(root.dataset.theme === "dark" ? "light" : "dark", true);
       });
       setTheme(initialTheme);
+      setLanguage(currentLanguage);
 
       const sectionNav = document.querySelector(".section-nav");
       let sectionNavUpdatePending = false;

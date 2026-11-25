@@ -16,8 +16,8 @@
   --chip-backend: #8050a0;
   --chip-devops: #a35b12;
   --chip-languages: #278258;
-  --display: 'Space Grotesk', 'Segoe UI', sans-serif;
-  --body: 'Lato', 'Segoe UI', sans-serif;
+  --display: "Space Grotesk", "Space Grotesk Fallback", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --body: "Space Grotesk", "Space Grotesk Fallback", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --code: 'Space Mono', Consolas, monospace;
 }
 
@@ -437,6 +437,45 @@ h1 .brace {
   color: var(--nav-hover) !important;
 }
 
+.language-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  border-left: 1px solid var(--line);
+  background: transparent;
+  color: inherit;
+  font-family: var(--code);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.language-toggle:hover {
+  color: var(--nav-hover);
+}
+
+.language-toggle:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.language-toggle-en {
+  display: none;
+}
+
+:root[lang="en"] .language-toggle-fr {
+  display: none;
+}
+
+:root[lang="en"] .language-toggle-en {
+  display: inline;
+}
+
 .theme-toggle {
   display: inline-flex;
   flex: 0 0 auto;
@@ -542,7 +581,21 @@ h1 .brace {
 
 .experience-entry {
   padding: 10px 0 31px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transform: scale(1);
+  transform-origin: center;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
   break-inside: avoid;
+}
+
+@media (hover: hover) {
+  .experience-entry:hover {
+    transform: scale(1.05);
+    border-color: var(--line);
+    background-color: var(--surface);
+    box-shadow: 0 6px 18px rgb(31 105 125 / 8%);
+  }
 }
 
 .entry-heading {
@@ -864,6 +917,11 @@ h1 .brace {
     height: 30px;
   }
 
+  .language-toggle {
+    width: 34px;
+    height: 30px;
+  }
+
   .cv-download {
     gap: 4px;
     min-height: 30px;
@@ -1040,6 +1098,7 @@ h1 .brace {
 
   .skip-link,
   .section-nav,
+  .language-toggle,
   .theme-toggle,
   .page-footer {
     display: none;
